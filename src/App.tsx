@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from './components/button';
+import ButtonHooks from './components/ButtonHooks';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +20,9 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
+
+        <Button onClick={() => alert("typescript is cool")} buttonText="This is a cool TS button" color="red" />
+        <ButtonHooks onClick={() => alert("typescript + hooks is cool")} buttonText={"this is a hooks button"} />
       </header>
     </div>
   );
